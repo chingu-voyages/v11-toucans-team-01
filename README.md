@@ -1,2 +1,5 @@
 # v11-toucans-team-01
-Add-project-description-here | Voyage-11 | https://chingu.io/ | https://twitter.com/ChinguCollabs
+Telemetry Template Clone | Voyage-11 | https://chingu.io/ | https://twitter.com/ChinguCollabs
+
+Here's the link to the homepage we'll duplicate for this voyage.
+[Telemetry Template](https://templated.co/p/3382153616677876)

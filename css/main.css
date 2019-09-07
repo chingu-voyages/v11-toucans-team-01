@@ -9,3 +9,10 @@ Border on top of coral background: rgba(255, 255, 255, 0.25)
 White button inset/border, color for quotes icon: rgba(255, 255, 255, 0.75)
 Dark gray background for slideout nav: #3b3b3b
 */
+
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}

@@ -44,7 +44,9 @@ a {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    margin-top: 2em;
+    background: #ff9185;
+    /* margin-top: 2em; */
+    padding: 1em 1.5em;
     width: 100%;
 }
 .nav h2 span {
@@ -60,6 +62,8 @@ a {
 .nav ul {
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
+    margin-right: 2em;
 }
 .nav ul li {
     padding: 0.5em;

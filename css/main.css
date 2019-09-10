@@ -184,3 +184,42 @@ a {
 .one .features .icon p {
     color: #5a5a5a;
 }
+
+/* ===== STATS ===== */
+.two {
+    background: #ff887b;
+    padding: 7em;
+}
+.two .stats {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.two .stats article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    padding: 0 4em;
+    border-right: solid 1px rgba(255, 255, 255, 0.25);
+}
+.two .stats article:nth-of-type(4) {
+    border-right: none;
+}
+.two .stats article h3 {
+    color: #fff;
+    font-size: 4em;
+}
+.two .stats article h4 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-bottom: 2em;
+}
+.two .stats article p {
+    font-size: 1.1em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+}

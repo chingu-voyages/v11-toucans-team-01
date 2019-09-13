@@ -144,7 +144,7 @@ a {
 }
 .one .split img {
     margin-right: 3em;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 .one section h2 {
     font-size: 1.75em;
@@ -277,7 +277,23 @@ a {
     text-align: center;
     font-size: 1.25em;
 }
-/*===== tabs =====*/
+/*===== PROGRESS =====*/
+.five .inner .split {
+    display: flex;
+    padding: 7em 0 5em 0;
+}
+.five .inner .split section {
+    width: 50%;
+}
+#percent-intro h2 {
+    font-size: 2em;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    margin: 0 0 1.5em 0;
+}
+#percent-intro img {
+    border-radius: 4px;
+}
 
 /*===== Footer =====*/
 
@@ -300,26 +316,26 @@ a {
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.75);
     color: #ffffff !important;
    }
-   .footer .button:hover {
+.footer .button:hover {
     background-color: rgba(255, 255, 255, 0.075);
    }
-   .footer .button:active {
+.footer .button:active {
     background-color: rgba(255, 255, 255, 0.2);
    }
-   .footer ul.contact-icons li :before {
+.footer ul.contact-icons li :before {
     color: #ffffff;
    }
    
-   .footer > .inner {
+.footer > .inner {
     margin: 0 auto;
     width: 80em;
     max-width: calc(100% - 6em);
    }
-   .footer .contact {
+.footer .contact {
     margin-right: 1.5em;
    }
    
-   .footer .copyright {
+.footer .copyright {
     border-top: solid 1px rgba(255, 255, 255, 0.25);
     font-size: 0.9em;
     margin-top: 4em;
@@ -327,18 +343,17 @@ a {
     text-align: center;
     width: 100%;
    }
-   label {
+label {
     cursor: default;
   }
-  .split {
-      align-items: flex-start;
-      display: flex;
-      margin: -63m;
-      margin-bottom: 2em;
-
+.split {
+    align-items: flex-start;
+    display: flex;
+    margin: -63m;
+    margin-bottom: 2em;
   }
 
-  .split > :nth-child(2n-1) {
+.split > :nth-child(2n-1) {
     width: 33%;
 }
 /*====== Icons =====*/
@@ -426,8 +441,6 @@ ul.icons-bordered {
    ul.actions:not(.fixed) li .button.icon:before {
     margin-left: -0.5em;
    }
-   
-
   
   
    /*===== Form =====*/
@@ -490,15 +503,13 @@ ul.icons-bordered {
     font-size: 11pt;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: 300;
-        line-height: 1.75;
-        border-radius: 4px;
-border: solid 1px;
-display: block;
-outline: 0;
-text-decoration: none;
-width: 100%;
-
-    
+    line-height: 1.75;
+    border-radius: 4px;
+    border: solid 1px;
+    display: block;
+    outline: 0;
+    text-decoration: none;
+    width: 100%;
 }
 .button {
     -webkit-appearance: none;
@@ -528,8 +539,8 @@ width: 100%;
 .footer input[type="email"],
 .footer select,
 .footer textarea {
- background-color: transparent;
- border-color: rgba(255, 255, 255, 0.25);
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.25);
 }
 .footer input, #footer select, #footer textarea {
     color: #ffffff;
@@ -548,8 +559,8 @@ input {
     color: #ffffff;
     font-size: 2em;
     line-height: 1.5;
-letter-spacing: 0.04em;
-margin: 0 0 1.5em 0;
+    letter-spacing: 0.04em;
+    margin: 0 0 1.5em 0;
 
 }
 *, ::before, ::after {
@@ -565,20 +576,16 @@ input[type="password"],
 input[type="email"],
 select,
 textarea {
- -moz-appearance: none;
- -webkit-appearance: none;
- -ms-appearance: none;
- appearance: none;
- border-radius: 4px;
- border: solid 1px;
- color: inherit;
- display: block;
- outline: 0;
- padding: 0 1em;
- text-decoration: none;
- width: 100%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    border-radius: 4px;
+    border: solid 1px;
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 100%;
 }
-
-
-
-

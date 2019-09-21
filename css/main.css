@@ -450,10 +450,25 @@ a {
  border: 0;
  vertical-align: baseline;
 }
+.footer h2 {
+    font-size: 2.3em;
+}
 .footer input,
 .footer select,
 .footer textarea {
  color: #ffffff;
+}
+.contact-icons {
+    display: flex;
+    flex-direction: column;
+}
+.contact-icons li {
+    padding: 0;
+}
+.contact-icons li a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 2;
 }
 .footer a {
  color: #ffffff;
@@ -513,7 +528,7 @@ ul.contact-icons {
 ul.contact-icons li {
  margin-bottom: 1.5em;
  min-height: 2.4em;
- padding-left: 2.25em;
+ /* padding-left: 2.25em; */
 }
 ul.contact-icons li:before {
  font-size: 1.25em;
@@ -627,7 +642,7 @@ ul.contact-icons li::before {
    /*===== Form =====*/
 
    form {
-     margin: 0 0 2em 0;
+     margin: 0 0 2em 2em;
      padding: 0;
      border: 0;
      font: inherit;
@@ -674,6 +689,7 @@ form > .fields > .field.half {
 .footer textarea {
  background-color: transparent;
  border-color: rgba(255, 255, 255, 0.25);
+ color: #fff;
 }
 .footer input[type="text"]:focus,
 .footer input[type="password"]:focus,

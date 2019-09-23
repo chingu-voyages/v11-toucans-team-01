@@ -284,6 +284,12 @@ a {
     padding: 3.75em 3.75em 1.75em 3.75em;
     margin-top: -1px;
 }
+.tabs .panels .panel {
+    display: none;
+}
+.tabs .panels .active {
+    display: block;
+}
 .panel .split {
     display: flex;
     align-items: flex-start;
@@ -452,11 +458,16 @@ a {
 }
 .footer h2 {
     font-size: 2.3em;
+    margin-bottom: 1.5em;
 }
 .footer input,
 .footer select,
 .footer textarea {
- color: #ffffff;
+ color: #ffffff !important;
+}
+.footer .contact {
+    margin-right: 8em;
+    width: 30%;
 }
 .contact-icons {
     display: flex;
@@ -464,9 +475,11 @@ a {
 }
 .contact-icons li {
     padding: 0;
+    font-size: 1em;
 }
 .contact-icons li a {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
     font-weight: 300;
     line-height: 2;
 }
@@ -528,15 +541,14 @@ ul.contact-icons {
 ul.contact-icons li {
  margin-bottom: 1.5em;
  min-height: 2.4em;
- /* padding-left: 2.25em; */
+ padding-left: 2.25em;
 }
 ul.contact-icons li:before {
- font-size: 1.25em;
+ font-size: 1.3em;
  left: 0;
  line-height: inherit;
  position: absolute;
- top: -0.1em;
-  color: #333333;
+ top: 0.4em;
 }
 ul.contact-icons li a {
  text-decoration: none;
@@ -629,19 +641,11 @@ ul.icons-bordered .icon:hover {
 .icon.solid::before {
     font-weight: 900;
 }
-ul.contact-icons li::before {
-    font-size: 1.25em;
-    left: 0;
-    line-height: inherit;
-    position: absolute;
-    top: -0.1em;
-}
-.fas-phone:before {
- content:"\f095"
-}
+
    /*===== Form =====*/
 
    form {
+     width: 70%;
      margin: 0 0 2em 2em;
      padding: 0;
      border: 0;
@@ -674,7 +678,14 @@ ul.contact-icons li::before {
  width: calc(100% - 1.5em);
 }
 form > .fields > .field.half {
- width: calc(50% - 0.75em);
+ width: 48%;
+ box-sizing: border-box;
+}
+.field.half:nth-of-type(1) {
+    margin-right: 2%;
+}
+.field.half:nth-of-type(2) {
+    margin-left: 2%;
 }
 .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6 {
     color: #ffffff;
@@ -689,7 +700,7 @@ form > .fields > .field.half {
 .footer textarea {
  background-color: transparent;
  border-color: rgba(255, 255, 255, 0.25);
- color: #fff;
+ color: #fff !important;
 }
 .footer input[type="text"]:focus,
 .footer input[type="password"]:focus,
@@ -805,4 +816,9 @@ button,
  background-color: transparent;
  box-shadow: inset 0 0 0 1px #5a5a5a;
  color: #333333;
+}
+input#name::placeholder, 
+input#email::placeholder, 
+textarea#message::placeholder {
+    color: #fff;
 }

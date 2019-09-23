@@ -822,3 +822,6 @@ input#email::placeholder,
 textarea#message::placeholder {
     color: #fff;
 }
+.actions input.button:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+}

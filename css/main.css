@@ -47,10 +47,17 @@ a {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    background: #ff9185;
+    background: transparent;
     padding: 1em 1.5em;
     width: 100%;
     z-index: 10;
+    transition: ease all 0.35s;
+}
+.solid {
+    background: #ff9185;
+}
+.transparent {
+    background: transparent;
 }
 .nav h2 a span {
     color: #fff;

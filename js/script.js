@@ -17,7 +17,6 @@ $(document).ready(function() {
     var tab3Content = document.getElementById('tab3-content');
 
     tab1.addEventListener('click', function() {
-        console.log('You clicked tab 1');
         tab1.classList.add('active');
         tab2.classList.remove('active');
         tab3.classList.remove('active');
@@ -27,7 +26,6 @@ $(document).ready(function() {
     });
 
     tab2.addEventListener('click', function() {
-        console.log('You clicked tab 2');
         tab1.classList.remove('active');
         tab2.classList.add('active');
         tab3.classList.remove('active');
@@ -37,7 +35,6 @@ $(document).ready(function() {
     });
 
     tab3.addEventListener('click', function() {
-        console.log('You clicked tab 3');
         tab1.classList.remove('active');
         tab2.classList.remove('active');
         tab3.classList.add('active');

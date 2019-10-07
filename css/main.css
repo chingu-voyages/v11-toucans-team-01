@@ -337,7 +337,7 @@ a {
     padding: 3.75em 3.75em 1.75em 3.75em;
     margin-top: -1px;
 }
-.tabs .panels .panel {
+.tabs .panels .hide {
     display: none;
 }
 .tabs .panels .active {

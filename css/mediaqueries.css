@@ -4,24 +4,36 @@
     }
 
     /* ===== SECTION ONE - ICONS ===== */
-    
+    .one {
+        width: 100%;
+        padding: 4em 0 !important;
+    }
+    .one .inner {
+        width: 90%;
+    }
+    .one .inner .split {
+        flex-direction: column-reverse !important;
+        align-items: center;
+    }
 
     /* ===== SECTION TWO - NUMBERS ===== */
     .two {
-        padding: 7em 0;
+        padding: 4em 0 !important;
         width: 100%;
+        margin: 0;
     }
     .two .inner {
-        width: 100%;
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
     }
     .two .inner .stats{
         display: flex;
         flex-flow: row wrap;
-        flex-grow: 1;
         width: 100%;
     }
     .stats article {
-        width: 40%;
+        width: 30% !important;
     }
     .two .stats article:nth-of-type(2) {
         border-right: none;
@@ -60,8 +72,34 @@
     }
     .four article {
         width: 100% !important;
-        border: solid 1px rebeccapurple;
         height: 30em;
+    }
+
+    /* ===== SECTION FIVE - PERCENTAGES ===== */
+    .five  {
+        width: 100%;
+    }
+    .five .inner {
+        width: 90%;
+    }
+    .five .inner .split {
+        display: flex;
+        flex-direction: column;
+    }
+    .five .inner .split section {
+        width: 90% !important;
+        margin-left: 0;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer .inner .split {
+        flex-direction: column !important;
+        margin: 0 auto !important;
+    }
+    .footer .contact {
+        width: 93% !important;
+        margin: 0 auto;
+        margin-bottom: 2em;
     }
 }
 

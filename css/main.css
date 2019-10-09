@@ -59,15 +59,25 @@ a {
 .transparent {
     background: transparent;
 }
+.nav .logo {
+    display: flex;
+    align-items: center;
+}
+.logo h2 a{
+    color: #fff;
+    text-decoration: none;
+}
 .nav h2 a span {
     color: #fff;
     font-size: 2em;
+    flex-shrink: 1;
 }
 .nav h2 {
     color: #fff;
     margin-left: 1em;
     font-size: 1.2em;
-    display: flex;
+    display: inline-flex;
+    justify-content: flex-start;
     align-items: center;
 }
 .nav ul {

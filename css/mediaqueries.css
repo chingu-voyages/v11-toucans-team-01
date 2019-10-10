@@ -1,5 +1,130 @@
 @media screen and (max-width: 768px) {
-    
+    #subheading {
+        display: none;
+    }
+
+    /* ===== SECTION ONE - ICONS ===== */
+    .one {
+        width: 100%;
+        padding: 4em 0 !important;
+    }
+    .one .inner {
+        width: 90%;
+    }
+    .one .inner .split {
+        flex-direction: column-reverse !important;
+        align-items: center;
+        margin: 0;
+    }
+    .one #icon-image {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 1em;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+    .one .inner .split img {
+        position: absolute;
+        margin: 0;
+        width: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -40%) scale(1.75);
+    }
+    .one .inner .features {
+        padding-left: 0;
+    }
+
+    /* ===== SECTION TWO - NUMBERS ===== */
+    .two {
+        padding: 4em 0 !important;
+        width: 100%;
+        margin: 0;
+    }
+    .two .inner {
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .two .inner .stats{
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+    .stats article {
+        width: 30% !important;
+    }
+    .two .stats article:nth-of-type(2) {
+        border-right: none;
+    }
+    .two .stats article:nth-of-type(1),
+    .two .stats article:nth-of-type(2) {
+        border-bottom: solid 1px rgba(255, 255, 255, 0.25);
+        padding-bottom: 2em;
+    }
+
+    /* ===== SECTION THREE - TABS ===== */
+    .three .inner {
+        width: 90%;
+    }
+    .three .panel .split {
+        flex-direction: column-reverse;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .panel .split .image,
+    .panel .split .content {
+        width: 100%;
+        margin-left: 0;
+    }
+    .panel .split .image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+
+    /* ===== SECTION FOUR - QUOTES ===== */
+    .four {
+        flex-direction: column !important;
+        width: 100%;
+        height: 60em !important;
+    }
+    .four article {
+        width: 100% !important;
+        height: 30em;
+        padding: 0 !important;
+    }
+
+    /* ===== SECTION FIVE - PERCENTAGES ===== */
+    .five  {
+        width: 100%;
+    }
+    .five .inner {
+        width: 85%;
+    }
+    .five .inner .split {
+        display: flex;
+        flex-direction: column;
+    }
+    .five .inner .split section {
+        width: 90% !important;
+        margin-left: 0;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer .inner .split {
+        flex-direction: column !important;
+        margin: 0 auto !important;
+    }
+    .footer .contact {
+        width: 93% !important;
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+    .footer form {
+        width: 85% !important;
+    }
 }
 
 @media screen and (max-width: 480px) {

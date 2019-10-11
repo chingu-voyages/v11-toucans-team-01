@@ -5,25 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Telemetry Clone</title>
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="css/mediaqueries.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Google Font link -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+    <!-- Favicon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
     <!-- Font Awesome kit link -->
     <script src="https://kit.fontawesome.com/f8f76b2390.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
 <header class="header">
     <nav class="nav">
-        <h2><span>Telemetry |</span> By Pixelarity | Cloned by Chingu Toucans Team 1</h2>
+        <div class="logo">
+            <h2><a href="index.html"><span>Telemetry</span></a></h2><h2 id="subheading"><a href="index.html">| By Pixelarity | Cloned by Chingu Toucans Team 1</a></h2>
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>   
             <li class="opener"><a href="#"><i class="icon fas fa-angle-down"></i> Dropdown</a>
-                <ul>
+                <ul class="dropdown">
                     <li>Option One</li>
                     <li>Option Two</li>
-                    <li><a href="#">Submenu</a>
-                    <ul>
+                    <li class="submenu"><a href="#">Submenu</a>
+                    <ul class="sub-links">
                         <li>Sub One</li>
                         <li>Sub Two</li>
                     </ul>
@@ -51,10 +60,8 @@
 <section class="one">
     <div class="inner">
         <div class="split style1">
-            <section>
-                <span class="image fit portrait">
-                    <img src="img/pic02.jpg" alt="">
-                </span>
+            <section id="icon-image">
+                <img src="img/pic02.jpg" alt="">
             </section>
         
             <section>
@@ -115,7 +122,7 @@
             <article>
                 <h3>256</h3>
                 <h4>Nullam amet</h4>
-                <p>Lorem ipsum dolor nulla feugiat adipiscin.g</p>
+                <p>Lorem ipsum dolor nulla feugiat adipiscing.</p>
                 
             </article>
             <article>
@@ -130,63 +137,63 @@
 <section class="three">
     <div class="inner">
         <div class="tabs">
-        <ul class="titles">
-          <li class="title active">Aliquam</li>
-          <li class="title">Consequat</li>
-          <li class="title">Feugiat</li>
-        </ul>    
-    <div class="panels">
-        <div class="panel active">
-            <div class="split">
-                <div class="content">
-                    <h2>Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing</h2>
-                    <p> Maecenas id feugiat nunc. Integer gravida augue libero, quis pellentesque amet pharetra a. Ut sagittis ipsum nec velit porttitor, sed convallis ligula pellentesque. Mauris et dignissim sem lacinia lorem ipsum dolor.</p>
-                    <ul class="actions">
-                        <li>
-                            <a href="#" class="button">Learn More</a>
-                        </li>
-                    </ul>
+            <ul class="titles">
+          <li class="title active" id="tab1">Aliquam</li>
+          <li class="title" id="tab2">Consequat</li>
+          <li class="title" id="tab3">Feugiat</h2></li>
+            </ul>    
+            <div class="panels">
+            <div class="panel active" id="tab1-content">
+                <div class="split">
+                    <div class="content">
+                        <h2>1 Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing</h2>
+                        <p> Maecenas id feugiat nunc. Integer gravida augue libero, quis pellentesque amet pharetra a. Ut sagittis ipsum nec velit porttitor, sed convallis ligula pellentesque. Mauris et dignissim sem lacinia lorem ipsum dolor.</p>
+                        <ul class="actions">
+                            <li>
+                                <a href="#" class="button">Learn More</a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="image">
                         <img src="img/pic05.jpg" alt="">
                     </div>
+                </div>
             </div>
-        </div>
           
-        <div class="panel">
-            <div class="split">
-                <div class="content">                        
-                    <h2>Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing</h2>
-                    <p> Veritatis, accusantium, nemo. Officia neque explicabo nihil! Sunt vero reprehenderit, necessitatibus atque, enim autem animi illum quaerat at, corporis dolore ipsam. Voluptatem culpa sapiente sed veroeros.</p>
-                    <ul class="actions">
-                        <li>
-                            <a href="#" class="button">Learn More</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="image"> 
-                    <img src="img/pic05.jpg" alt="">               
-                </div>
-            </div>
-        </div>
-     
-        <div class="panel">
-            <div class="split">
-                <div class="content">                     
-                    <h2>Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing</h2>
-                    <p> Veritatis, accusantium, nemo. Officia neque explicabo nihil! Sunt vero reprehenderit, necessitatibus atque, enim autem animi illum quaerat at, corporis dolore ipsam. Voluptatem culpa sapiente sed veroeros.</p>
-                    <ul class="actions">
-                        <li>
-                            <a href="#"class="button">Learn More</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="image"> 
-                    <img src="img/pic05.jpg" alt="">
+            <div class="panel hide" id="tab2-content">
+                <div class="split">
+                    <div class="content">                        
+                        <h2>2 Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing</h2>
+                        <p> Veritatis, accusantium, nemo. Officia neque explicabo nihil! Sunt vero reprehenderit, necessitatibus atque, enim autem animi illum quaerat at, corporis dolore ipsam. Voluptatem culpa sapiente sed veroeros.</p>
+                        <ul class="actions">
+                            <li>
+                                <a href="#" class="button">Learn More</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="image"> 
+                        <img src="img/pic05.jpg" alt="">               
+                    </div>
                 </div>
             </div>
-        </div>
-        </div>
+        
+            <div class="panel hide" id="tab3-content">
+                <div class="split">
+                    <div class="content">                     
+                        <h2>3 Lorem ipsum dolor sit amet nulla etiam feugiat sed adipiscing</h2>
+                        <p> Veritatis, accusantium, nemo. Officia neque explicabo nihil! Sunt vero reprehenderit, necessitatibus atque, enim autem animi illum quaerat at, corporis dolore ipsam. Voluptatem culpa sapiente sed veroeros.</p>
+                        <ul class="actions">
+                            <li>
+                                <a href="#"class="button">Learn More</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="image"> 
+                        <img src="img/pic05.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
     </div>
 
@@ -277,19 +284,16 @@
                 <h2>Contact</h2>
                 <ul class="contact-icons">
                     <li class="icon fas fa-home">
-                        
                         <a href="#">
                             1234 Fictional Street #5432
-                            <br>
+                        <br>
                             Nashville, TN 00000-00000
                         </a>
                     </li>
-                    <li class="icon fas fa-phone">
-                        
+                    <li class="icon fas fa-phone"> 
                         <a href="#">(000) 000-0000</a>
                     </li>
                     <li class="icon fas fa-envelope">
-                        
                         <a href="#">info@untitled.tld</a>
                     </li>
                 </ul>
@@ -334,7 +338,7 @@
                     </div>
                     <div class=field>
                         <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
-                        <div>
+                    </div>
 
                 </div>
                 <ul class="actions">

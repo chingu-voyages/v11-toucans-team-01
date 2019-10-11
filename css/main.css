@@ -38,25 +38,46 @@ a {
     max-width: 1200px;
     margin: 0 auto;
 }
+.button:hover {
+    background: rgba(144, 144, 144, 0.075);
+}
 
 /* ===== HEADER ===== */
 .nav {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    background: #ff9185;
-    /* margin-top: 2em; */
+    background: transparent;
     padding: 1em 1.5em;
     width: 100%;
+    z-index: 10;
+    transition: ease all 0.35s;
 }
-.nav h2 span {
+.solid {
+    background: #ff9185;
+}
+.transparent {
+    background: transparent;
+}
+.nav .logo {
+    display: flex;
+    align-items: center;
+}
+.logo h2 a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav h2 a span {
+    color: #fff;
     font-size: 2em;
+    flex-shrink: 1;
 }
 .nav h2 {
     color: #fff;
     margin-left: 1em;
     font-size: 1.2em;
-    display: flex;
+    display: inline-flex;
+    justify-content: flex-start;
     align-items: center;
 }
 .nav ul {
@@ -859,10 +880,20 @@ button,
  box-shadow: inset 0 0 0 1px #5a5a5a;
  color: #333333;
 }
+<<<<<<< HEAD
 input#name::placeholder,
 input#email::placeholder, 
 textarea#message::placeholder {
     color: #fff;
+}
+.actions input.button:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+=======
+input#name::placeholder, 
+input#email::placeholder, 
+textarea#message::placeholder {
+    color: #fff;
+>>>>>>> b1c3ce8c67c3bb44e711738cfc2a5358c2509768
 }
 .actions input.button:hover {
     background-color: rgba(255, 255, 255, 0.075);

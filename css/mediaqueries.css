@@ -33,12 +33,14 @@
         padding-right: 10px;
     }
     .sidebar-nav {
+        display: flex !important;
         position: fixed;
-        right: 0;
+        right: -40%;
         height: 100%;
         width: 40%;
         background: #3b3b3b;
         z-index: 15;
+        transition: all ease 0.5s;
     }
     #collapse-nav {
         display: flex;
@@ -190,6 +192,9 @@
     .five .inner .split section {
         width: 90% !important;
         margin-left: 0;
+    }
+    .five .inner .button {
+        margin-bottom: 2.5em;
     }
 
     /* ===== FOOTER ===== */

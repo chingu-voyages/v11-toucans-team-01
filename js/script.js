@@ -42,4 +42,18 @@ $(document).ready(function() {
         tab2Content.style.display = 'none';
         tab3Content.style.display = 'block';
     });
+
+    // Collapse Nav for Tablet and Mobile
+    var menuButton = document.querySelector('.navbarbutton');
+    var sideMenu = document.querySelector('.sidebar-nav');
+    var closeMenu = document.querySelector('.fa-times');
+    menuButton.addEventListener('click', function() {
+        sideMenu.style.right = '0';
+    });
+    closeMenu.addEventListener('click', function() {
+        sideMenu.style.right = '-40%';
+    });
+    $('.menu-link').on('click', function() {
+        sideMenu.style.right = '-40%';
+    });
 })

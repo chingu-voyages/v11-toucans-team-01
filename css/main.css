@@ -47,6 +47,7 @@ a {
     position: fixed;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: transparent;
     padding: 1em 1.5em;
     width: 100%;
@@ -144,6 +145,9 @@ a {
     display: block;
 }
 .navbarbutton {
+    display: none;
+}
+.sidebar-nav {
     display: none;
 }
 

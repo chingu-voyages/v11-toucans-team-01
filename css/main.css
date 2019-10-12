@@ -47,6 +47,7 @@ a {
     position: fixed;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: transparent;
     padding: 1em 1.5em;
     width: 100%;
@@ -144,6 +145,9 @@ a {
     display: block;
 }
 .navbarbutton {
+    display: none;
+}
+.sidebar-nav {
     display: none;
 }
 
@@ -571,18 +575,6 @@ a {
   margin-right: 1.5em;
  }
 }
-@media screen and (max-width: 736px) {
- .footer {
-  padding: 3em 0 1em 0 ;
- }
- .footer > .inner {
-  max-width: calc(100% - 3em);
- }
- .footer .copyright {
-  margin-top: 2em;
-  padding-top: 2em;
- }
-}
 .split {
  -moz-align-items: -moz-flex-start;
  -webkit-align-items: -webkit-flex-start;
@@ -705,30 +697,30 @@ ul.icons-bordered .icon:hover {
     font-weight: 900;
 }
 
-   /*===== Form =====*/
+/*===== Form =====*/
 
-   form {
-     width: 70%;
-     margin: 0 0 2em 2em;
-     padding: 0;
-     border: 0;
-     font: inherit;
-     vertical-align: baseline;
-   }
+form {
+    width: 70%;
+    margin: 0 0 2em 2em;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
 
-   form > .fields {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    -moz-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    width: calc(100% + 3em);
-    margin: -1.5em 0 2em -1.5em;
-   }
-   form > .fields > .field {
+form > .fields {
+display: -moz-flex;
+display: -webkit-flex;
+display: -ms-flex;
+display: flex;
+-moz-flex-wrap: wrap;
+-webkit-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+width: calc(100% + 3em);
+margin: -1.5em 0 2em -1.5em;
+}
+form > .fields > .field {
  -moz-flex-grow: 0;
  -webkit-flex-grow: 0;
  -ms-flex-grow: 0;
@@ -880,20 +872,10 @@ button,
  box-shadow: inset 0 0 0 1px #5a5a5a;
  color: #333333;
 }
-<<<<<<< HEAD
 input#name::placeholder,
 input#email::placeholder, 
 textarea#message::placeholder {
     color: #fff;
-}
-.actions input.button:hover {
-    background-color: rgba(255, 255, 255, 0.075);
-=======
-input#name::placeholder, 
-input#email::placeholder, 
-textarea#message::placeholder {
-    color: #fff;
->>>>>>> b1c3ce8c67c3bb44e711738cfc2a5358c2509768
 }
 .actions input.button:hover {
     background-color: rgba(255, 255, 255, 0.075);

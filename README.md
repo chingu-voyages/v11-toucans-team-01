@@ -14,7 +14,7 @@ This site was designed using:
 ### Running this Project
 View our live version:
 
-[GitHub Pages link]()
+[GitHub Pages link](https://chingu-voyages.github.io/v11-toucans-team-01/)
 
 From the repo:
 
